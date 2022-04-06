@@ -1,0 +1,112 @@
+.content-part h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1c1f21;
+}
+
+.content-part em {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  color: #1c1f21;
+  float: left;
+}
+.content-part .hd nav {
+  float: right;
+  width: 546px;
+}
+.content-part .hd nav ul {
+  padding-top: 16px;
+}
+.content-part .hd nav ul li {
+  float: left;
+  margin-right: 16px;
+  font-size: 14px;
+}
+.content-part .hd nav ul li:last-child {
+  margin-right: 0;
+}
+.content-part .hd nav ul li a {
+  color: rgba(0, 0, 0, 0.85);
+}
+.content-part .hd nav ul li.current {
+  border-bottom: 4px solid #20bd9a;
+  padding-bottom: 4px;
+}
+.content-part .hd nav ul li.current a {
+  color: #20bd9a;
+}
+/* 特效：鼠标触碰图片，放大 */
+.content-part img {
+  transition: transform 0.4s ease 0s;
+}
+.content-part img:hover {
+  transform: scale(1.1);
+}
+.content-part li {
+  overflow: hidden;
+}
+.content-part li .picbox {
+  height: 184px;
+  overflow: hidden;
+}
+.content-part .grid {
+  overflow: hidden;
+}
+.content-part .more-grid {
+  width: 264px;
+  height: 270px;
+  background-image: linear-gradient(180deg, #34e3bc 0%, #15af7a 98%);
+  box-sizing: border-box;
+  position: relative;
+}
+.content-part .more-grid a {
+  display: block;
+  height: 270px;
+  padding-top: 46px;
+  box-sizing: border-box;
+}
+.content-part .more-grid p {
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  font-size: 15px;
+}
+.content-part .more-grid .iconfont {
+  position: absolute;
+  font-size: 48px;
+  color: white;
+  width: 48px;
+  height: 48px;
+  left: 50%;
+  top: 118px;
+  margin-left: -24px;
+}
+/* 鼠标触碰more-grid盒子之后，iconfont进行蹦跳动画 */
+.content-part .more-grid:hover .iconfont {
+  animation: ud 0.4s ease 0s infinite alternate;
+}
+@keyframes ud {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+.content-part .more-grid ul {
+  margin-top: 112px;
+  padding-left: 40px;
+}
+.content-part .more-grid ul li {
+  color: white;
+  float: left;
+  border-right: 1px solid white;
+  padding: 0 9px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+}
+.content-part .more-grid ul li:last-child {
+  border-right: none;
+}
