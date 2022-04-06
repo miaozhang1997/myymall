@@ -1,0 +1,40 @@
+/* 三盒子嵌套：最内层盒子设置宽度，一、二层盒内浮动/padding布局 */
+.site-head .header-con {
+  height: 36px;
+  padding: 21px 0;
+}
+.site-head .header-con h1 {
+  float: left;
+  font-size: 24px;
+  color: #20bd9a;
+  line-height: 36px;
+  font-weight: bold;
+}
+.site-head .header-con .soso-box {
+  float: left;
+  margin-left: 20px;
+  width: 405px;
+  padding-top: 2px;
+}
+.site-head .header-con .soso-box input {
+  float: left;
+  width: 361px;
+  height: 28px;
+  border: 1px solid #20bd9a;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  /* 取消默认外线 */
+  outline: none;
+  padding-left: 10px;
+}
+.site-head .header-con .soso-box .btn {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: #20bd9a;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  border-radius: 0 4px 4px 0;
+}

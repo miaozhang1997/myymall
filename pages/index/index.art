@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>慕云游商城 - 机票、酒店、旅游攻略</title>
+    <meta name="Keywords" content="机票，酒店，旅游攻略，签证，出国，自由行" />
+    <meta
+      name="Description"
+      content="慕云游商城有10多年旅游行业经验，为您提供全方位旅游服务"
+    />
+  </head>
+
+  <body>
+    <!-- 1.页面顶部 -->
+    <header class="site-head">
+      {{include './components/siteHead/siteHead.art'}}
+    </header>
+    <!-- 2.横幅 -->
+    <section class="banner" id="banner">
+      {{include './components/banner/banner.art'}}
+    </section>
+
+    <!-- 3.热门广告 -->
+    <section class="hot-ads clearfix">
+      <div class="center-wrap">
+        {{include './components/hotAds/hotAds.art'}}
+      </div>
+    </section>
+
+    <!-- 4.新鲜甩尾 -->
+    <section class="xxsw content-part">
+      <div class="center-wrap">
+        {{include './components/xxsw/xxsw.art'}}
+      </div>
+    </section>
+
+    <!-- 5.机酒自由行 -->
+    <section class="jjzyx content-part common-style">
+      <div class="center-wrap">
+        {{include './components/jjzyx/jjzyx.art'}}
+      </div>
+    </section>
+
+    <!-- 6.当地玩乐 -->
+    <section class="ddwl content-part">
+      <div class="center-wrap">
+        {{include './components/ddwl/ddwl.art'}}
+      </div>
+    </section>
+
+    <!-- 7.特色当地体验 -->
+    <section class="tsddty content-part">
+      <div class="center-wrap">
+        {{include './components/tsddty/tsddty.art'}}
+      </div>
+    </section>
+
+    <!-- 8.最世界·深度旅行 -->
+    <section class="zsjsdlx content-part common-style">
+      <div class="center-wrap">
+        {{include './components/zsjsdlx/zsjsdlx.art'}}
+      </div>
+    </section>
+
+    <!-- 9.跟团/半自助游 -->
+    <section class="gtbzzy content-part common-style">
+      <div class="center-wrap">
+        {{include './components/gtbzzy/gtbzzy.art'}}
+      </div>
+    </section>
+
+    <!-- 10页脚 -->
+    <footer>{{include '../../components/footer/footer.art'}}</footer>
+
+    <!--0.返回顶部 -->
+    {{include '../../components/backtotop/backtotop.art'}}
+  </body>
+</html>

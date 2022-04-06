@@ -1,0 +1,121 @@
+.site-head .topbar {
+  min-width: 1152px;
+  height: 32px;
+  background-color: #2a2a2a;
+  color: white;
+  line-height: 32px;
+}
+.site-head .topbar a {
+  color: white;
+}
+/* 快捷链接区左浮，登录注册区右浮 */
+.site-head .topbar .shortcut-links {
+  float: left;
+}
+.site-head .topbar .topbar-r {
+  float: right;
+  width: 225px;
+}
+/* 快捷链接区内部设置 */
+.site-head .topbar .shortcut-links > ul > li {
+  float: left;
+  margin-right: 18px;
+  font-size: 14px;
+}
+.site-head .topbar .shortcut-links > ul > li.have-menu {
+  padding-right: 12px;
+  position: relative;
+}
+
+/* 三角箭头布局+旋转 */
+.site-head .topbar .shortcut-links > ul > li.have-menu .arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -6px;
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s ease 0s;
+}
+.site-head .topbar .shortcut-links > ul > li.have-menu:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* 制作三角箭头：两个不同颜色的正方形旋转45度后错位压盖 */
+.site-head .topbar .shortcut-links > ul > li.have-menu .arrow b {
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.site-head .topbar .shortcut-links > ul > li.have-menu .arrow i {
+  position: absolute;
+  left: 4px;
+  top: 0.5px;
+  width: 6px;
+  height: 6px;
+  background-color: #2a2a2a;
+  transform: rotate(45deg);
+}
+.site-head .topbar .shortcut-links > ul > li.have-menu .menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 9999;
+  /* 默认隐藏菜单栏 */
+  display: none;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* 分别设置三个菜单栏宽度 */
+.site-head .topbar .shortcut-links > ul > li.have-menu .sqmenu {
+  width: 110px;
+}
+.site-head .topbar .shortcut-links > ul > li.have-menu .scmenu {
+  width: 80px;
+}
+.site-head .topbar .shortcut-links > ul > li.have-menu .jdmsmenu {
+  width: 80px;
+}
+
+/* 触碰有菜单栏的项，显示菜单栏 */
+.site-head .topbar .shortcut-links > ul > li.have-menu:hover .menu {
+  display: block;
+}
+
+/* 菜单栏内部设置 */
+.site-head .topbar .shortcut-links > ul > li.have-menu .menu .menu-list li {
+  height: 20px;
+  line-height: 20px;
+}
+.site-head .topbar .shortcut-links > ul > li.have-menu .menu .menu-list a {
+  font-size: 12px;
+  color: #1c1f21;
+  line-height: 20px;
+}
+
+/* 触碰菜单栏的项，则变色 */
+.site-head
+  .topbar
+  .shortcut-links
+  > ul
+  > li.have-menu
+  .menu
+  .menu-list
+  a:hover {
+  color: orange;
+}
+/* 登录注册区:a\span都是文本级标签,字体图标\文字\|都属文本 */
+.site-head .topbar .topbar-r a,
+span {
+  margin-right: 11px;
+  font-size: 15px;
+}
+.site-head .topbar .topbar-r a:last-child {
+  margin-right: 0;
+}

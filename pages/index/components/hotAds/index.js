@@ -1,0 +1,1 @@
+import "./hotAds.css";

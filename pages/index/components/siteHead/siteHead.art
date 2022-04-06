@@ -1,0 +1,17 @@
+<!-- 1.1状态栏 -->
+<!-- include的路径问题：本地文件用相对路径；网络文件当作 function 或 webseriver 使用 -->
+<!-- siteHead-components-index-pages-src/components/topbar/topbar.art -->
+{{include '../../../../components/topbar/topbar.art'}}
+<!-- 1.2主导航 -->
+<nav class="main-nav">
+  <div class="center-wrap">
+    {{include '../mainNav/mainNav.art'}}
+  </div>
+</nav>
+<!-- 1.3搜索区 -->
+<!-- 三盒子嵌套 -->
+<div class="header-con">
+  <div class="center-wrap">
+    {{include '../headerCon/headerCon.art'}}
+  </div>
+</div>
